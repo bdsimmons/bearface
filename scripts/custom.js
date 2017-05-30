@@ -24,7 +24,7 @@ $(document).ready(function(){
 		stickyLoadInit();
 
 		// Before & After Plugin
-		$(".before-after").twentytwenty()
+		$(".before-after").twentytwenty();
 
 		// Fullscreen menu trigger positioning 
 		triggerPositioning();
@@ -349,8 +349,12 @@ $(document).ready(function(){
 			var attrImageBG = $(this).attr('data-background-image');
 			var attrColorBG = $(this).attr('data-background-color');
 
-			$(this).css('background-image', 'url('+attrImageBG+')');
-			$(this).css('background', ''+attrColorBG+'');
+			if (attrImageBG) {
+				$(this).css('background-image', 'url('+attrImageBG+')');
+			}
+			if (attrColorBG) {
+				$(this).css('background', ''+attrColorBG+'');
+			}
 		});
 
 
@@ -388,7 +392,10 @@ $(document).ready(function(){
 			var attrColor = $(this).attr('data-color');
 			var attrOpacity = $(this).attr('data-color-opacity');
 
-			$(this).css('background-image', 'url('+attrImage+')');
+
+			if (attrImage) {
+				$(this).css('background-image', 'url('+attrImage+')');
+			}
 			$(this).find(".bg-color").css('background-color', ''+attrColor+'');
 			$(this).find(".bg-color").css('opacity', ''+attrOpacity+'');
 		});
