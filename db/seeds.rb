@@ -48,7 +48,7 @@ home.update!(
         "fields" => {
           "eyebrow" => "White-label software development for agencies",
           "heading" => "Your agency's software team.",
-          "subheading" => "Your client just asked for something WordPress can't do — a customer portal, a custom ordering system, software. Say yes. Bearface scopes it, quotes it wholesale, and builds it under your brand. You own the client, the markup, and the credit.",
+          "subheading" => "Your client just asked for something WordPress can't do — a customer portal, a mobile app, a custom ordering system. Say yes. Bearface scopes it, quotes it wholesale, and builds it under your brand. You own the client, the markup, and the credit.",
           "primary_label" => "Send us a project to scope",
           "primary_url" => "mailto:ben@bearface.io?subject=Project%20to%20scope",
           "secondary_label" => "See how the model works",
@@ -59,20 +59,20 @@ home.update!(
         "id" => SecureRandom.uuid,
         "type" => "deal_math",
         "fields" => {
-          "eyebrow" => "The model, in one deal",
+          "eyebrow" => "The model",
           "cell1_who" => "Your client pays",
-          "cell1_amount" => "$28,800",
-          "cell1_desc" => "Your quote, your invoice, your relationship.",
+          "cell1_amount" => "Retail",
+          "cell1_desc" => "You set the number. Your quote, your invoice, your relationship.",
           "cell2_who" => "You keep",
-          "cell2_amount" => "$4,800",
-          "cell2_desc" => "A 20% markup on the build — before recurring margin.",
-          "cell3_who" => "Bearface builds for",
-          "cell3_amount" => "$24,000",
-          "cell3_desc" => "Fixed price, milestone payments, defined scope.",
+          "cell2_amount" => "20–40%",
+          "cell2_desc" => "The typical agency markup on our wholesale price — before recurring margin.",
+          "cell3_who" => "Bearface builds at",
+          "cell3_amount" => "Wholesale",
+          "cell3_desc" => "A fixed price with milestone payments and defined scope, quoted before you pitch.",
           "cell4_who" => "Then, every month",
-          "cell4_amount" => "$75–150",
-          "cell4_desc" => "Your margin on managed hosting & support you resell.",
-          "note" => "Real numbers from a real engagement shape: a multi-school fundraising platform with teacher portals, unique student storefronts, and Stripe checkout. Your client never learns Bearface exists unless you want them to."
+          "cell4_amount" => "Recurring",
+          "cell4_desc" => "Managed hosting & support you resell at your own rate, month after month.",
+          "note" => "Every engagement has the same shape: you get a wholesale number and a suggested retail before you ever pitch, so you know your margin going in. Your client never learns Bearface exists unless you want them to."
         }
       },
       {
@@ -117,15 +117,15 @@ home.update!(
         "type" => "services",
         "fields" => {
           "heading" => "What we build",
-          "introduction" => "Production software with real money and real users moving through it — the requests your clients bring that a plugin can't answer.",
-          "item1_title" => "Custom web applications",
-          "item1_text" => "Portals, dashboards, booking and ordering systems — built on Ruby on Rails, the stack behind Shopify and GitHub.",
-          "item2_title" => "E-commerce & payments",
-          "item2_text" => "Stripe integrations, multi-tenant storefronts, subscriptions, payouts. We've built payment systems at point-of-sale scale.",
-          "item3_title" => "Integrations & automation",
-          "item3_text" => "Making the client's CRM, ERP, or legacy system talk to the web. APIs, imports, sync jobs, webhooks.",
-          "item4_title" => "Client-editable sites",
-          "item4_text" => "When a project needs content the client manages themselves, we wire in a CMS layer — under your brand, like everything else."
+          "introduction" => "Custom software of any kind — production systems with real money and real users moving through them. If your client can describe it, we can scope it.",
+          "item1_title" => "Web applications & portals",
+          "item1_text" => "Customer portals, dashboards, booking and ordering systems, content the client edits themselves — the requests a plugin can't answer. Built on Ruby on Rails, the stack behind Shopify and GitHub.",
+          "item2_title" => "Mobile apps",
+          "item2_text" => "iOS and Android, shipped to the App Store and Play Store under your client's brand — often paired with the web platform behind them.",
+          "item3_title" => "E-commerce & payments",
+          "item3_text" => "Stripe integrations, multi-tenant storefronts, subscriptions, payouts. We've built payment systems at point-of-sale scale.",
+          "item4_title" => "Integrations & automation",
+          "item4_text" => "Making the client's CRM, ERP, or legacy system talk to the web — APIs, imports, sync jobs, webhooks, and the services in between."
         }
       },
       {
@@ -149,7 +149,7 @@ home.update!(
       }
     ]
   }
-) if home.new_record? || home.data.fetch("sections", []).blank?
+)
 
 main_nav = site.nav_menus.find_or_initialize_by(handle: "main")
 main_nav.update!(name: "Main navigation")

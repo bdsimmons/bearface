@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">Bearface candidate A — refined profile badge</title>
+  <desc id="desc">An angular badge with a bear head in side profile cut from its center.</desc>
+  <path fill="currentColor" fill-rule="evenodd" d="M50 3 88 26v47L50 97 12 73V27L50 3ZM23 39l11-2 7-10 10 5 5 9 12 5 13 6 7 8-8 7-14 4-13-1-11 6-12 9-9-8 13-15 10-6-9-8-12-2v-7Z"/>
+</svg>
