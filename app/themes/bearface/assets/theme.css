@@ -20,8 +20,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
 .eyebrow { margin: 0 0 1.25rem; font: 500 .72rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 
 .site-header { position: relative; z-index: 10; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 5.25rem; padding: .65rem var(--gutter); border-bottom: 1px solid var(--ink); background: var(--paper); }
-.brand { display: inline-flex; align-items: center; justify-self: start; gap: .65rem; font-size: 1.1rem; font-weight: 700; letter-spacing: -.04em; text-decoration: none; }
-.brand img { width: 2.55rem; height: 2.55rem; }
+.brand { display: inline-flex; align-items: center; justify-self: start; text-decoration: none; }
+.brand-wordmark { font-size: 1.18rem; font-weight: 700; line-height: 1; letter-spacing: -.065em; text-transform: uppercase; }
 .primary-nav { display: flex; gap: clamp(1rem, 2.4vw, 2.5rem); font: 500 .7rem/1 var(--mono); text-transform: uppercase; }
 .primary-nav a { padding: .75rem 0; text-decoration: none; background-image: linear-gradient(var(--blue), var(--blue)); background-position: 0 100%; background-repeat: no-repeat; background-size: 0 2px; transition: background-size .2s ease; }
 .primary-nav a:hover { background-size: 100% 2px; }
@@ -98,7 +98,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
 .credentials span { color: var(--blue); }
 
 .cta-section { display: grid; grid-template-columns: .35fr 1fr .55fr; align-items: end; gap: clamp(2rem, 5vw, 6rem); padding: clamp(5rem, 10vw, 10rem) var(--gutter); background: var(--acid); }
-.cta-mark img { width: clamp(5rem, 10vw, 9rem); }
+.cta-mark strong.brand-wordmark { display: block; font-size: clamp(1.25rem, 2.2vw, 2rem); }
 .cta-mark span { display: block; margin-top: 1rem; font: 500 .65rem/1.4 var(--mono); }
 .cta-copy > p:last-child { max-width: 42rem; margin: 2rem 0 0; font-size: 1.1rem; }
 .cta-email { padding: 1.25rem 0; border-block: 1px solid var(--ink); font: 500 clamp(.95rem, 1.6vw, 1.3rem)/1.2 var(--mono); text-decoration: none; }
@@ -107,7 +107,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
 .cta-email:hover { color: var(--blue); }
 
 .site-footer { display: grid; grid-template-columns: .5fr 1fr .7fr auto; align-items: end; gap: 2rem; padding: 3.5rem var(--gutter); background: var(--ink); color: white; }
-.brand--footer img { filter: invert(1); }
 .site-footer p { margin: 0; color: #aaa; font-size: .85rem; }
 .site-footer > a:not(.brand) { font: .8rem var(--mono); }
 .site-footer small { color: #777; font: .62rem var(--mono); }
@@ -141,7 +140,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
 @media (max-width: 600px) {
   html { scroll-padding-top: 4.5rem; }
   .site-header { min-height: 4.5rem; }
-  .brand img { width: 2.2rem; height: 2.2rem; }
+  .brand-wordmark { font-size: 1.05rem; }
   .header-contact { padding: .7rem; font-size: .62rem; }
   .hero { min-height: auto; padding-top: 5.5rem; }
   .hero-signal { right: -4rem; }
@@ -159,7 +158,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
   .about-label span { margin-top: 1rem; }
   .credentials, .cta-email { grid-column: auto; }
   .cta-mark { display: flex; align-items: end; gap: 1rem; }
-  .cta-mark img { width: 4rem; }
   .site-footer { grid-template-columns: 1fr; align-items: start; }
 }
 
