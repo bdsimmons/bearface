@@ -1,0 +1,13 @@
+<section class="deal-math" id="model">
+  <header class="deal-heading">
+    {% if block.eyebrow != blank %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <p aria-hidden="true">WHOLESALE / RETAIL</p>
+  </header>
+  <div class="ledger">
+    {% if block.cell1_who != blank or block.cell1_amount != blank %}<article class="ledger-row ledger-row--client"><span class="ledger-index">01</span><div><h2>{{ block.cell1_who }}</h2>{% if block.cell1_desc != blank %}<p>{{ block.cell1_desc }}</p>{% endif %}</div><strong>{{ block.cell1_amount }}</strong></article>{% endif %}
+    {% if block.cell2_who != blank or block.cell2_amount != blank %}<article class="ledger-row ledger-row--keep"><span class="ledger-index">02</span><div><h2>{{ block.cell2_who }}</h2>{% if block.cell2_desc != blank %}<p>{{ block.cell2_desc }}</p>{% endif %}</div><strong>{{ block.cell2_amount }}</strong></article>{% endif %}
+    {% if block.cell3_who != blank or block.cell3_amount != blank %}<article class="ledger-row"><span class="ledger-index">03</span><div><h2>{{ block.cell3_who }}</h2>{% if block.cell3_desc != blank %}<p>{{ block.cell3_desc }}</p>{% endif %}</div><strong>{{ block.cell3_amount }}</strong></article>{% endif %}
+    {% if block.cell4_who != blank or block.cell4_amount != blank %}<article class="ledger-row ledger-row--monthly"><span class="ledger-index">04</span><div><h2>{{ block.cell4_who }}</h2>{% if block.cell4_desc != blank %}<p>{{ block.cell4_desc }}</p>{% endif %}</div><strong>{{ block.cell4_amount }}</strong></article>{% endif %}
+  </div>
+  {% if block.note != blank %}<p class="deal-note"><span>FIELD NOTE</span>{{ block.note }}</p>{% endif %}
+</section>

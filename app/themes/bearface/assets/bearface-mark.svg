@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Bearface geometric bear mark</title>
+  <path fill="#111" d="M4 6h18l10 8L42 6h18v18l-7 6v20L32 62 11 50V30l-7-6V6Z"/>
+  <path fill="#fff" d="M13 15h8l7 6-5 9-10-5V15Zm38 0h-8l-7 6 5 9 10-5V15ZM20 35h24v11L32 54 20 46V35Z"/>
+  <path fill="#1238ff" d="m24 35 8 5 8-5-2 11H26l-2-11Z"/>
+</svg>

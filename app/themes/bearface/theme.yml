@@ -1,0 +1,223 @@
+name: Bearface
+handle: bearface
+version: 0.1.0
+author: Bearface
+category: Agency
+description: The public theme for bearface.io — white-label software development for agencies.
+settings:
+  fields:
+    - handle: contact_email
+      type: text
+      label: Contact email
+      default: ben@bearface.io
+blocks:
+  - handle: hero
+    label: Hero
+    fields:
+      - handle: eyebrow
+        type: text
+        label: Eyebrow
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: subheading
+        type: textarea
+        label: Subheading
+      - handle: primary_label
+        type: text
+        label: Primary button label
+      - handle: primary_url
+        type: text
+        label: Primary button URL
+      - handle: secondary_label
+        type: text
+        label: Secondary button label
+      - handle: secondary_url
+        type: text
+        label: Secondary button URL
+  - handle: deal_math
+    label: Deal Math
+    fields:
+      - handle: eyebrow
+        type: text
+        label: Eyebrow
+      - handle: cell1_who
+        type: text
+        label: Cell 1 label
+      - handle: cell1_amount
+        type: text
+        label: Cell 1 amount
+      - handle: cell1_desc
+        type: text
+        label: Cell 1 description
+      - handle: cell2_who
+        type: text
+        label: Cell 2 label
+      - handle: cell2_amount
+        type: text
+        label: Cell 2 amount
+      - handle: cell2_desc
+        type: text
+        label: Cell 2 description
+      - handle: cell3_who
+        type: text
+        label: Cell 3 label
+      - handle: cell3_amount
+        type: text
+        label: Cell 3 amount
+      - handle: cell3_desc
+        type: text
+        label: Cell 3 description
+      - handle: cell4_who
+        type: text
+        label: Cell 4 label
+      - handle: cell4_amount
+        type: text
+        label: Cell 4 amount
+      - handle: cell4_desc
+        type: text
+        label: Cell 4 description
+      - handle: note
+        type: textarea
+        label: Footnote
+  - handle: rules
+    label: White-Label Rules
+    fields:
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: introduction
+        type: textarea
+        label: Introduction
+      - handle: item1_title
+        type: text
+        label: Rule 1 title
+      - handle: item1_text
+        type: textarea
+        label: Rule 1 text
+      - handle: item2_title
+        type: text
+        label: Rule 2 title
+      - handle: item2_text
+        type: textarea
+        label: Rule 2 text
+      - handle: item3_title
+        type: text
+        label: Rule 3 title
+      - handle: item3_text
+        type: textarea
+        label: Rule 3 text
+      - handle: item4_title
+        type: text
+        label: Rule 4 title
+      - handle: item4_text
+        type: textarea
+        label: Rule 4 text
+      - handle: item5_title
+        type: text
+        label: Rule 5 title
+      - handle: item5_text
+        type: textarea
+        label: Rule 5 text
+  - handle: steps
+    label: Engagement Steps
+    fields:
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: step1_label
+        type: text
+        label: Step 1 label
+      - handle: step1_title
+        type: text
+        label: Step 1 title
+      - handle: step1_text
+        type: textarea
+        label: Step 1 text
+      - handle: step2_label
+        type: text
+        label: Step 2 label
+      - handle: step2_title
+        type: text
+        label: Step 2 title
+      - handle: step2_text
+        type: textarea
+        label: Step 2 text
+      - handle: step3_label
+        type: text
+        label: Step 3 label
+      - handle: step3_title
+        type: text
+        label: Step 3 title
+      - handle: step3_text
+        type: textarea
+        label: Step 3 text
+      - handle: step4_label
+        type: text
+        label: Step 4 label
+      - handle: step4_title
+        type: text
+        label: Step 4 title
+      - handle: step4_text
+        type: textarea
+        label: Step 4 text
+  - handle: services
+    label: Services Grid
+    fields:
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: introduction
+        type: textarea
+        label: Introduction
+      - handle: item1_title
+        type: text
+        label: Service 1 title
+      - handle: item1_text
+        type: textarea
+        label: Service 1 text
+      - handle: item2_title
+        type: text
+        label: Service 2 title
+      - handle: item2_text
+        type: textarea
+        label: Service 2 text
+      - handle: item3_title
+        type: text
+        label: Service 3 title
+      - handle: item3_text
+        type: textarea
+        label: Service 3 text
+      - handle: item4_title
+        type: text
+        label: Service 4 title
+      - handle: item4_text
+        type: textarea
+        label: Service 4 text
+  - handle: about
+    label: About
+    fields:
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: body
+        type: textarea
+        label: Body (paragraphs separated by blank lines)
+      - handle: credentials
+        type: textarea
+        label: Credentials (one per line)
+  - handle: cta
+    label: Call To Action
+    fields:
+      - handle: eyebrow
+        type: text
+        label: Eyebrow
+      - handle: heading
+        type: text
+        label: Heading
+      - handle: text
+        type: textarea
+        label: Text
+      - handle: email
+        type: text
+        label: Contact email

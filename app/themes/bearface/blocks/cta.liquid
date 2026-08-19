@@ -1,0 +1,9 @@
+<section class="cta-section" id="contact">
+  <div class="cta-mark" aria-hidden="true"><img src="{{ 'mark-ink.png' | theme_asset_url }}" alt=""><span>READY WHEN<br>YOU ARE</span></div>
+  <div class="cta-copy">
+    {% if block.eyebrow != blank %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading != blank %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.text != blank %}<p>{{ block.text }}</p>{% endif %}
+  </div>
+  {% if block.email != blank %}<a class="cta-email" href="mailto:{{ block.email }}?subject=Project%20to%20scope"><span>Forward the ask</span>{{ block.email }} <i aria-hidden="true">↗</i></a>{% endif %}
+</section>

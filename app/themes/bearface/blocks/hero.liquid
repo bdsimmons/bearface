@@ -1,0 +1,17 @@
+<section class="hero">
+  <div class="hero-signal" aria-hidden="true"><span>CONFIDENTIAL</span><span>YOUR BRAND HERE</span></div>
+  <div class="hero-main">
+    {% if block.eyebrow != blank %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading != blank %}<h1>{{ block.heading }}</h1>{% endif %}
+    {% if block.subheading != blank %}<p class="hero-copy">{{ block.subheading }}</p>{% endif %}
+    {% if block.primary_label != blank or block.secondary_label != blank %}
+      <div class="hero-actions">
+        {% if block.primary_label != blank and block.primary_url != blank %}<a class="button button--ink" href="{{ block.primary_url }}">{{ block.primary_label }} <span aria-hidden="true">↗</span></a>{% endif %}
+        {% if block.secondary_label != blank and block.secondary_url != blank %}<a class="text-link" href="{{ block.secondary_url }}">{{ block.secondary_label }} <span aria-hidden="true">↓</span></a>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+  <aside class="hero-stamp" aria-label="Bearface working behind your agency brand">
+    <span>Your agency</span><strong>FRONT</strong><i></i><span>Bearface</span><strong>BEHIND</strong>
+  </aside>
+</section>

@@ -1,0 +1,9 @@
+<section class="services-section" id="build">
+  <header class="section-intro section-intro--services"><p class="eyebrow">Build capability</p>{% if block.heading != blank %}<h2>{{ block.heading }}</h2>{% endif %}{% if block.introduction != blank %}<p>{{ block.introduction }}</p>{% endif %}</header>
+  <div class="services-list">
+    {% if block.item1_title != blank %}<article><span>01</span><h3>{{ block.item1_title }}</h3>{% if block.item1_text != blank %}<p>{{ block.item1_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.item2_title != blank %}<article><span>02</span><h3>{{ block.item2_title }}</h3>{% if block.item2_text != blank %}<p>{{ block.item2_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.item3_title != blank %}<article><span>03</span><h3>{{ block.item3_title }}</h3>{% if block.item3_text != blank %}<p>{{ block.item3_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.item4_title != blank %}<article><span>04</span><h3>{{ block.item4_title }}</h3>{% if block.item4_text != blank %}<p>{{ block.item4_text }}</p>{% endif %}</article>{% endif %}
+  </div>
+</section>

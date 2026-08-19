@@ -1,0 +1,9 @@
+<section class="steps-section" id="process">
+  <header class="section-intro section-intro--steps"><p class="eyebrow">The handoff</p>{% if block.heading != blank %}<h2>{{ block.heading }}</h2>{% endif %}</header>
+  <div class="steps-track">
+    {% if block.step1_title != blank %}<article><span>{{ block.step1_label }}</span><h3>{{ block.step1_title }}</h3>{% if block.step1_text != blank %}<p>{{ block.step1_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.step2_title != blank %}<article><span>{{ block.step2_label }}</span><h3>{{ block.step2_title }}</h3>{% if block.step2_text != blank %}<p>{{ block.step2_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.step3_title != blank %}<article><span>{{ block.step3_label }}</span><h3>{{ block.step3_title }}</h3>{% if block.step3_text != blank %}<p>{{ block.step3_text }}</p>{% endif %}</article>{% endif %}
+    {% if block.step4_title != blank %}<article><span>{{ block.step4_label }}</span><h3>{{ block.step4_title }}</h3>{% if block.step4_text != blank %}<p>{{ block.step4_text }}</p>{% endif %}</article>{% endif %}
+  </div>
+</section>

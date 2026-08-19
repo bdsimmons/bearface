@@ -1,0 +1,8 @@
+{% if entry.slug == "home" %}
+  <div class="home-page">{{ entry.data.sections }}</div>
+{% else %}
+  <article class="standard-page">
+    <header><p class="eyebrow">{{ site.name }} / Page</p><h1>{{ entry.title }}</h1></header>
+    {% if entry.data.body != blank %}<div class="prose">{{ entry.data.body }}</div>{% endif %}
+  </article>
+{% endif %}

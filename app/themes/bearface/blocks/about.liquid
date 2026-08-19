@@ -1,0 +1,19 @@
+<section class="about-section" id="about">
+  <div class="about-label"><p class="eyebrow">Operator profile</p><span aria-hidden="true">IDENTITY / DISCLOSED</span></div>
+  <div class="about-copy">
+    {% if block.heading != blank %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body != blank %}
+      {% capture paragraph_break %}
+
+{% endcapture %}
+      {% assign paragraphs = block.body | split: paragraph_break %}
+      {% for paragraph in paragraphs %}{% if paragraph != blank %}<p>{{ paragraph }}</p>{% endif %}{% endfor %}
+    {% endif %}
+  </div>
+  {% if block.credentials != blank %}
+    {% capture line_break %}
+{% endcapture %}
+    {% assign credentials = block.credentials | split: line_break %}
+    <ul class="credentials" aria-label="Credentials">{% for credential in credentials %}{% if credential != blank %}<li><span aria-hidden="true">✓</span>{{ credential }}</li>{% endif %}{% endfor %}</ul>
+  {% endif %}
+</section>

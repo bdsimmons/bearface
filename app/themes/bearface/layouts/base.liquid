@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if entry.title and entry.slug != "home" %}{{ entry.title }} · {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{{ site.seo_description }}">
+    <meta name="theme-color" content="#1238ff">
+    <link rel="icon" href="{{ 'mark-cobalt.png' | theme_asset_url }}" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ 'theme.css' | theme_asset_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="{{ site.name }} home">
+        <img src="{{ 'mark-ink.png' | theme_asset_url }}" alt="" width="40" height="44">
+        <span>{{ site.name }}</span>
+      </a>
+
+      {% if nav.main.items.size > 0 %}
+        <nav class="primary-nav" aria-label="Primary navigation">
+          {% for item in nav.main.items %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+        </nav>
+      {% endif %}
+
+      {% if site.theme_settings.contact_email != blank %}
+        <a class="header-contact" href="mailto:{{ site.theme_settings.contact_email }}">Send the ask <span aria-hidden="true">↗</span></a>
+      {% endif %}
+    </header>
+
+    <main id="main-content">{{ content }}</main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="/" aria-label="{{ site.name }} home">
+        <img src="{{ 'mark-white.png' | theme_asset_url }}" alt="" width="40" height="44">
+        <span>{{ site.name }}</span>
+      </a>
+      <p>White-label software development.<br>Your name out front. Ours behind it.</p>
+      {% if site.theme_settings.contact_email != blank %}<a href="mailto:{{ site.theme_settings.contact_email }}">{{ site.theme_settings.contact_email }}</a>{% endif %}
+      <small>© 2026 {{ site.name }}</small>
+    </footer>
+  </body>
+</html>

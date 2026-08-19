@@ -1,0 +1,14 @@
+<section class="rules-section">
+  <header class="section-intro section-intro--rules">
+    <p class="eyebrow">Terms / Non-negotiable</p>
+    {% if block.heading != blank %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.introduction != blank %}<p>{{ block.introduction }}</p>{% endif %}
+  </header>
+  <ol class="rules-list">
+    {% if block.item1_title != blank %}<li><span>§01</span><div><h3>{{ block.item1_title }}</h3>{% if block.item1_text != blank %}<p>{{ block.item1_text }}</p>{% endif %}</div></li>{% endif %}
+    {% if block.item2_title != blank %}<li><span>§02</span><div><h3>{{ block.item2_title }}</h3>{% if block.item2_text != blank %}<p>{{ block.item2_text }}</p>{% endif %}</div></li>{% endif %}
+    {% if block.item3_title != blank %}<li><span>§03</span><div><h3>{{ block.item3_title }}</h3>{% if block.item3_text != blank %}<p>{{ block.item3_text }}</p>{% endif %}</div></li>{% endif %}
+    {% if block.item4_title != blank %}<li><span>§04</span><div><h3>{{ block.item4_title }}</h3>{% if block.item4_text != blank %}<p>{{ block.item4_text }}</p>{% endif %}</div></li>{% endif %}
+    {% if block.item5_title != blank %}<li><span>§05</span><div><h3>{{ block.item5_title }}</h3>{% if block.item5_text != blank %}<p>{{ block.item5_text }}</p>{% endif %}</div></li>{% endif %}
+  </ol>
+</section>
