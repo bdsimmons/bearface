@@ -1,0 +1,6 @@
+default: production
+remotes:
+    production:
+        via: once
+        host: plum-production
+        once_app: bearface.io
