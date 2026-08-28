@@ -1,0 +1,12 @@
+<% content_for :title, "BearFace Ledger · Bearface" %>
+<% content_for :description, "BearFace Ledger is BearFace Media's private QuickBooks Online connector." %>
+<article class="standard-page">
+  <header><p class="eyebrow">Internal software / QuickBooks Online</p><h1>BearFace Ledger</h1></header>
+  <div class="prose">
+    <p>BearFace Ledger is a private, internal connector that lets BearFace Media's tools access QuickBooks Online companies we own or operate.</p>
+    <p>It is used only by BearFace Media, LLC. It is not a marketplace product, is not sold to customers, and is not available for public use. QuickBooks access begins only after an authorized BearFace representative approves the connection through Intuit OAuth.</p>
+    <div class="page-actions"><%= link_to "Connect or reconnect", ledger_connect_path, class: "button" %><%= link_to "Disconnect", ledger_disconnect_path %></div>
+    <h2>Questions?</h2>
+    <p>Contact <a href="mailto:ben@bearface.io">ben@bearface.io</a> or <a href="tel:+12058617210">205.861.7210</a>.</p>
+  </div>
+</article>
