@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  get "privacy" => "public_pages#privacy", as: :privacy
+  get "terms" => "public_pages#terms", as: :terms
+  get "ledger" => "public_pages#ledger", as: :ledger
+  get "ledger/connect" => "public_pages#ledger_connect", as: :ledger_connect
+  get "ledger/disconnect" => "public_pages#ledger_disconnect", as: :ledger_disconnect
+
   mount Plum::Engine, at: "/"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

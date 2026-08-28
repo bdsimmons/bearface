@@ -1,0 +1,17 @@
+<% content_for :title, "Disconnect BearFace Ledger · Bearface" %>
+<% content_for :description, "How to disconnect BearFace Ledger from QuickBooks Online." %>
+<article class="standard-page">
+  <header><p class="eyebrow">BearFace Ledger / Authorization</p><h1>Disconnect</h1></header>
+  <div class="prose">
+    <p>To disconnect BearFace Ledger and revoke its OAuth access:</p>
+    <ol>
+      <li>Sign in to the connected QuickBooks Online company.</li>
+      <li>Open <strong>Apps</strong>, then <strong>Manage apps</strong>.</li>
+      <li>Find <strong>BearFace Ledger</strong>.</li>
+      <li>Select <strong>Disconnect</strong> and confirm.</li>
+    </ol>
+    <p>Disconnecting revokes BearFace Ledger's OAuth token, so it can no longer access that QuickBooks Online company. A new Intuit OAuth grant is required to reconnect.</p>
+    <p>For help or to ask us to revoke access, email <a href="mailto:ben@bearface.io">ben@bearface.io</a> or call <a href="tel:+12058617210">205.861.7210</a>.</p>
+    <div class="page-actions"><%= link_to "About BearFace Ledger", ledger_path, class: "button" %><%= link_to "Privacy policy", privacy_path %></div>
+  </div>
+</article>

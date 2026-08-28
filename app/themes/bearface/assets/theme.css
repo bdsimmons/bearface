@@ -106,9 +106,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-
 .cta-email i { float: right; font-style: normal; }
 .cta-email:hover { color: var(--blue); }
 
-.site-footer { display: grid; grid-template-columns: .5fr 1fr .7fr auto; align-items: end; gap: 2rem; padding: 3.5rem var(--gutter); background: var(--ink); color: white; }
+.site-footer { display: grid; grid-template-columns: .5fr 1fr auto .7fr auto; align-items: end; gap: 2rem; padding: 3.5rem var(--gutter); background: var(--ink); color: white; }
 .site-footer p { margin: 0; color: #aaa; font-size: .85rem; }
-.site-footer > a:not(.brand) { font: .8rem var(--mono); }
+.site-footer > a:not(.brand), .footer-links { font: .8rem var(--mono); }
+.footer-links { display: flex; gap: 1rem; }
 .site-footer small { color: #777; font: .62rem var(--mono); }
 
 .standard-page { min-height: 70vh; padding: clamp(4rem, 9vw, 9rem) var(--gutter); }
